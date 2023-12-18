@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppe è scemo lo sanno tutti</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8; /* Aggiunto uno sfondo grigio per evidenziare il centro */
+        }
+
+        #pupazzetto {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+            text-align: center; /* Allinea il testo al centro */
+        }
+
+        #risposta {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="pupazzetto">
+    <iframe src="https://giphy.com/embed/8foZzYfwpvEJHcKoBp" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/care-nurture-helping-hand-8foZzYfwpvEJHcKoBp"></a></p>
+    <p>Si ma tu mi vuoi o non mi vuoi?</p>
+    <p>Perchè j so tropp nu fiorellin, nun poss stà senz'acqua</p>
+    <button onclick="rispondiSi()">Sì</button>
+    <button onclick="rispondiNo()">No</button>
+    <p id="risposta"></p>
+</div>
+
+<script>
+    // Funzioni per gestire le risposte
+    function rispondiSi() {
+        document.getElementById("risposta").innerHTML = "Pikoffo tvb!";
+    }
+
+    function rispondiNo() {
+        document.getElementById("risposta").innerHTML = "Vaffamocc a mamt!";
+    }
+
+    // Mostra il pupazzetto dopo il caricamento della pagina
+    window.onload = function () {
+        document.getElementById("pupazzetto").style.display = "block";
+    };
+</script>
+
+</body>
+</html>
